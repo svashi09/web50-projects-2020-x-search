@@ -99,17 +99,24 @@ body {
     border: 1px solid #dadce0;
 }
 
-/* Advanced Search layout */
+/* Advanced Search page layout */
 .advanced-container {
-    width: 90%;
-    max-width: 950px;
-    margin: 60px auto;
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+}
+
+.advanced-search-heading {
+    font-size: 20px;
+    color: #ea4335;
+    margin-bottom: 30px;
 }
 
 .advanced-field {
     display: flex;
-    align-items: center;
     margin-bottom: 25px;
+    align-items: center;
 }
 
 .advanced-field label {
@@ -124,18 +131,39 @@ body {
     font-size: 14px;
     border: 1px solid #dfe1e5;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
-/* Google-style blue button for advanced search */
+/* Left-aligned button for Advanced Search */
+.advanced-container .button-container {
+    justify-content: flex-start;
+}
+
+/* Google style blue button for advanced search page */
+
+.blue-button-container {
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 220px;
+    gap: 20px;
+    height: 30px;
+}
+
 .blue-button {
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+    padding: 0 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 2px;
+    cursor: default;
     transition: background-color 0.2s;
+    border: 1px solid #3079ed;
+    color: #dfe1e5;
 }
 
 .blue-button:hover {
